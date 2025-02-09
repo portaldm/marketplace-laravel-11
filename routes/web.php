@@ -17,3 +17,6 @@ require __DIR__.'/auth.php';
 
 //Rota de login do admin
 Route::get('admin/login', [AdminController::class, 'login'])->name('admin.login');
+
+//Rota de login recuperação de senha
+Route::get('admin/forgot-password', [AdminController::class, 'forgot'])->name('admin.forgot');
